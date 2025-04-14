@@ -1,0 +1,31 @@
+.container{
+    background-color: black;
+    background-image: 
+      radial-gradient(white 1px, transparent 1px),
+      radial-gradient(white 1px, transparent 1px);
+    background-size: 200px 200px;
+    background-position: 
+      0 0,
+      100px 50px;
+
+    height: 100vh;
+    position: relative;
+    // width: 100%;
+    
+}
+a:visited,
+a:link,
+a:hover,
+a:active {
+  color: #C0C0C0;
+  text-decoration: none;
+}
+@media (max-width:768px){
+    .container{
+        // background-color: #0d0d0d;
+        height: 100vh;
+        position: relative;
+    }
+}
+
+  

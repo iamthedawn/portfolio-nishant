@@ -1,0 +1,124 @@
+import React, { useRef } from "react";
+import "./Connect.scss";
+import * as motion from "motion/react-client";
+import "animate.css";
+import robot from "./../../assets/robot.png";
+import { Button, TextField } from "@mui/material";
+
+const Connect = () => {
+  const formRef = useRef(null);
+
+  const handleSubmit = () => {
+    return setTimeout(() => {
+      alert("Submitted Successfully!");
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+    }, 1000);
+  };
+  
+
+  return (
+    <div className="connectContainer">
+      <div className="connectCardsContainer animate__animated animate__slideInRight">
+        <div className="socialsFlexContainer animate__animated animate__headShake animate__infinite">
+          <img className="roboImg" src={robot} />
+        </div>
+        <div className="formCard">
+          <span className="formHeader">Get In Touch</span>
+          <div className="formContainer">
+            <form ref={formRef}>
+              <TextField
+                id="name"
+                name="name"
+                label="Name"
+                variant="standard"
+                fullWidth
+                required={true}
+              />
+              <TextField
+                id="email"
+                type="email"
+                label="Email"
+                name="email"
+                variant="standard"
+                fullWidth
+                required={true}
+                className="marginTop"
+              />
+              <TextField
+                id="message"
+                label="Message"
+                name="message"
+                variant="standard"
+                multiline
+                rows={4}
+                fullWidth
+                required={true}
+                className="marginTop"
+              />
+              <Button
+                onClick={() => handleSubmit()}
+                className="marginTop"
+                variant="text"
+                fullWidth
+              >
+                Submit
+              </Button>
+            </form>
+            {/* <div> */}
+            <div className="socialsCard marginTopmore ">
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/nishhantm/"
+                >
+                  <i className="socialIcon devicon-linkedin-plain" />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+                <a target="_blank" href="https://github.com/iamthedawn">
+                  <i className="socialIcon devicon-github-original" />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+                <a target="_blank" href="mailto:nishhantm@gmail.com">
+                  <i className="socialIcon fa-solid fa-envelope" />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+                <a target="_blank" href="https://www.instagram.com/nishhantm/">
+                  <i className="socialIcon fab fa-instagram" />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+                <a target="_blank" href="https://x.com/nishhantm">
+                  <i className="socialIcon devicon-twitter-original" />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+                <a
+                  target="_blank"
+                  href="https://discordapp.com/users/nishhantm"
+                >
+                  <i className="socialIcon fab fa-discord" />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/its.nishant.maurya"
+                >
+                  <i className="socialIcon devicon-facebook-plain" />
+                </a>
+              </motion.div>
+            </div>
+            {/* </div> */}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Connect;
