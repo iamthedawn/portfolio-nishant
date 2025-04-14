@@ -32,10 +32,6 @@ The website is built with a mobile-first approach and adapts seamlessly to:
 
 No matter the screen size, the user experience stays sharp and fluid.
 
-## 📸 Preview
-
-> _(Add your live demo link or preview screenshots here)_
-
 ---
 
 ## 🛠️ Getting Started
