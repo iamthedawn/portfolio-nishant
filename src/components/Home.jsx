@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as motion from "motion/react-client";
 import nishantImg from "./../../assets/homeImg.jpg";
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Typed from "typed.js";
 import "./Home.scss";
 import "animate.css";
