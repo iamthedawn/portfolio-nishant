@@ -41,8 +41,12 @@ const Home = () => {
               <span className="college">IIIT Kota</span>
             </a>
             , working as SDE with a passion for building clean, scalable web
-            apps. Always curious, always coding.
+            apps. Always curious, always coding.<br/>
+            
+            <a href="https://shorturl.at/lfFMe" target="_blank"><span className="college">Resume <OpenInNewIcon/>
+            </span></a>
           </span>
+
         </div>
       </div>
       <motion.div
