@@ -9,12 +9,23 @@ import NetworkTeam from "./../../assets/NetworkProj.png";
 import CodeRunner from "./../../assets/CodeRunnerProj.png";
 import DrumPlay from "./../../assets/DrumPlayProj.png";
 import DiceGame from "./../../assets/DiceGameProj.png";
+import FlowChartBuilder from "./../../assets/FlowChartProj.png";
 import "animate.css";
 
 const Projects = () => {
   return (
     <div className="projectsContainer">
       <div className="projectsCardList animate__animated animate__slideInRight">
+         <ProjectsCard
+          projName={"FlowChart Builder"}
+          projDesc={
+            "Responsive React app to build, export, and share flowcharts easily."
+          }
+          projUrl={"https://flowchartbuilder.vercel.app/"}
+          projImg={FlowChartBuilder}
+          projUrlTxt={"flowchartbuilder.vercel.app"}
+          projTech={"ReactJS,JS,HTML,CSS,JS"}
+        />
         <ProjectsCard
           projName={"FitIndia Webiste"}
           projDesc={
