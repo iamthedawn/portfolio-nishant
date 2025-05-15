@@ -30,7 +30,9 @@
 }
 @media (max-width: 768px) {
   .projectsContainer {
-    overflow: scroll !important;
+    // overflow: scroll !important;
+    overflow-y: scroll !important;
+    overflow-x:hidden !important;
     // border: 10px solid purple;
     height: 95%;
   }
