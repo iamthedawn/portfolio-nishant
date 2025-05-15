@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -12,9 +12,21 @@ import Footer from "./components/Footer.jsx";
 
 const Layout = () => {
   const location = useLocation();
-  console.log("location", location);
+  const [height, setHeight] = useState(window.innerHeight);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setHeight(window.innerHeight);
+      console.log(
+        "Window resized to:",
+        window.innerWidth,
+        "x",
+        window.innerHeight
+      );
+    });
+  }, [window.innerHeight]);
+
   return (
-    <div className="container ">
+      <div className="container" style={{ height: height, width: "100vw" }}>
       {location.pathname === "/" && <VantaBackground />}
       <Header />
 
