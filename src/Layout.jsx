@@ -16,12 +16,6 @@ const Layout = () => {
   useEffect(() => {
     window.addEventListener("resize", () => {
       setHeight(window.innerHeight);
-      console.log(
-        "Window resized to:",
-        window.innerWidth,
-        "x",
-        window.innerHeight
-      );
     });
   }, [window.innerHeight]);
 
