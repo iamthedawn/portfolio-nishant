@@ -16,3 +16,4 @@ export default function App() {
     </ThemeProvider>
   );
 }
+// setup done in new mac m4
