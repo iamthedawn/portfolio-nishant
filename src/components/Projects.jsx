@@ -10,6 +10,7 @@ import CodeRunner from "./../../assets/CodeRunnerProj.png";
 import DrumPlay from "./../../assets/DrumPlayProj.png";
 import DiceGame from "./../../assets/DiceGameProj.png";
 import FlowChartBuilder from "./../../assets/FlowChartProj.png";
+import ToDoList from "./../../assets/ToDoListProj.png";
 import "animate.css";
 
 const Projects = () => {
@@ -24,6 +25,16 @@ const Projects = () => {
           projUrl={"https://flowchartbuilder.vercel.app/"}
           projImg={FlowChartBuilder}
           projUrlTxt={"flowchartbuilder.vercel.app"}
+          projTech={"ReactJS,JS,HTML,CSS,JS"}
+        />
+         <ProjectsCard
+          projName={"Todo List"}
+          projDesc={
+            "Responsive React app to create and save Todo items on the go."
+          }
+          projUrl={"https://iamthedawn.github.io/TodoList/"}
+          projImg={ToDoList}
+          projUrlTxt={"Webpage"}
           projTech={"ReactJS,JS,HTML,CSS,JS"}
         />
         <ProjectsCard
