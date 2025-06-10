@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const [mobileMenuClicked, setMobileMenuClicked] = useState(false);
 
@@ -16,7 +16,7 @@ const Header = () => {
           location.pathname == "/" && "navElementsUnderline"
         } headerLogo`}
         >
-        <a href="/">Nishant Mourya</a>
+        <Link to="/">Nishant Mourya</Link>
       </div>
 
       <div
@@ -32,30 +32,31 @@ const Header = () => {
       >
         {mobileMenuClicked && (
           <li className={`${location.pathname == "/" && "navElementsUnderline"}`}>
-            <a href="/">Home</a>
+            
+            <Link to="/">Home</Link>
           </li>
         )}
 
         <li  className={`${
             location.pathname.includes("experience") && "navElementsUnderline"
           }`}>
-          <a href="experience">Experience</a>
+            <Link to="experience">Experience</Link>
         </li>
         <li  className={`${
             location.pathname.includes("skills") && "navElementsUnderline"
           }`}>
-          <a href="skills">Skills</a>
+          <Link to="skills">Skills</Link>
         </li>
 
         <li className={`${
             location.pathname.includes("projects") && "navElementsUnderline"
           }`}>
-          <a href="projects">Projects</a>
+          <Link to="projects">Projects</Link>
         </li>
         <li className={`${
             location.pathname.includes("connect") && "navElementsUnderline"
           }`}>
-          <a href="connect">Connect</a>
+          <Link to="connect">Connect</Link>
         </li>
       </ul>
     </div>
