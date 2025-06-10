@@ -4,6 +4,7 @@ import * as motion from "motion/react-client";
 import "animate.css";
 import robot from "./../../assets/robot.png";
 import { Button, TextField } from "@mui/material";
+import { Helmet } from "react-helmet-async";
 
 const Connect = () => {
   const formRef = useRef(null);
@@ -16,10 +17,12 @@ const Connect = () => {
       }
     }, 1000);
   };
-  
 
   return (
     <div className="connectContainer">
+      <Helmet>
+        <title>Connect | Nishant Mourya</title>
+      </Helmet>
       <div className="connectCardsContainer animate__animated animate__slideInRight">
         <div className="socialsFlexContainer animate__animated animate__headShake animate__infinite">
           <img className="roboImg" src={robot} />

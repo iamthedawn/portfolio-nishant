@@ -3,6 +3,7 @@ import "./Skills.scss";
 import * as motion from "motion/react-client";
 
 import "animate.css";
+import { Helmet } from "react-helmet-async";
 const Skills = () => {
   const [disp, setDisp] = useState(false);
 
@@ -13,6 +14,9 @@ const Skills = () => {
 
   return (
     <div className="skillsContainer">
+      <Helmet>
+        <title>Skills | Nishant Mourya</title>
+      </Helmet>
       <div className="skillsList">
         <div className="skillsFlexContainer animate__animated animate__slideInRight">
           <div className="skillHeading">Professional Skillset</div>
