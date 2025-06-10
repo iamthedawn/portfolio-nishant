@@ -13,6 +13,7 @@ Welcome to the source code of **Nishant Mourya's personal portfolio website**, b
   - 🎞️ [Framer Motion](https://www.framer.com/motion/) – for smooth transitions and page animations
   - ✨ [Animate.css](https://animate.style/) – for quick attention-grabbing CSS animations
   - 🌌 [Three.js](https://threejs.org/) – for immersive 3D animated backgrounds
+  - 🌌 [Helmet react library (react-helmet-async )](https://www.npmjs.com/package/react-helmet-async) – for dynamic titles for diff routes
 
 ## 📄 About the Website
 
