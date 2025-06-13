@@ -43,13 +43,17 @@ Follow the steps below to run the project locally:
 ```bash
 git clone https://github.com/your-username/nishant-portfolio.git
 cd nishant-portfolio
-
+```
 
 2. Install Dependencies
+```bash
 npm install
+```
 
-3. Start the Development Server
+4. Start the Development Server
+```bash
 npm run dev
+```
 
 The app will start running on http://localhost:5173 (Vite’s default port) 🚀
 
