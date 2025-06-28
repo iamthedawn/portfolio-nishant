@@ -34,7 +34,6 @@ const Connect = () => {
       };
     });
   };
-  
 
   return (
     <div className="connectContainer">
@@ -91,6 +90,9 @@ const Connect = () => {
                 onClick={() => handleSubmit()}
                 className="marginTop"
                 variant="text"
+                disabled={Object.entries(formFields).some(
+                  ([_, value]) => value == ""
+                )}
                 fullWidth
               >
                 Submit
