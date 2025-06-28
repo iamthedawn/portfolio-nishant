@@ -48,7 +48,7 @@ const Home = () => {
             , working as SDE with a passion for building clean, scalable web
             apps. Always curious, always coding.
             <br />
-            <a href="https://shorturl.at/zzucs" target="_blank">
+            <a href="https://drive.google.com/file/d/19yrew1YZciAMzLoYxyQ7m21ojAuneAjD/view?usp=sharing" target="_blank">
               <span className="college">
                 Resume <OpenInNewIcon />
               </span>
