@@ -1,8 +1,9 @@
-import  { useState } from "react";
-import "./Header.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
+import  { useState } from "react";
+import "./Header.scss";
+
 const Header = () => {
   const [mobileMenuClicked, setMobileMenuClicked] = useState(false);
 

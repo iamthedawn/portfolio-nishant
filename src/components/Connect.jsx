@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
-import "./Connect.scss";
 import * as motion from "motion/react-client";
-import "animate.css";
 import robot from "./../../assets/robot.png";
 import { Button, TextField } from "@mui/material";
 import { Helmet } from "react-helmet-async";
+import "./Connect.scss";
+import "animate.css";
 
 const Connect = () => {
   const formRef = useRef(null);

@@ -1,35 +1,14 @@
-import  { useEffect, useRef } from "react";
 import * as motion from "motion/react-client";
 import nishantImg from "./../../assets/homeImg.jpg";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import Typed from "typed.js";
-import "./Home.scss";
-import "animate.css";
+import useTyped from "../hooks/useTyped";
 import { Helmet } from "react-helmet-async";
+import "animate.css";
+import "./Home.scss";
+
 
 const Home = () => {
-  const typedRef = useRef(null);
-  const typedInstance = useRef(null); // store the instance to clean it up later
-
-  useEffect(() => {
-    if (typedRef.current) {
-      typedInstance.current = new Typed(typedRef.current, {
-        strings: [
-          "Hi I am Nishant",
-          "Hi I am a Developer",
-          "Hi I am a Coder",
-          "Hi I am an Engineer",
-        ],
-        typeSpeed: 50,
-        backSpeed: 30,
-        loop: true,
-      });
-    }
-
-    return () => {
-      typedInstance.current?.destroy(); // clean up
-    };
-  }, []);
+  const typedRef = useTyped();
 
   return (
     <div className="homeContainer">
@@ -48,7 +27,10 @@ const Home = () => {
             , working as SDE with a passion for building clean, scalable web
             apps. Always curious, always coding.
             <br />
-            <a href="https://drive.google.com/file/d/19yrew1YZciAMzLoYxyQ7m21ojAuneAjD/view?usp=sharing" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/19yrew1YZciAMzLoYxyQ7m21ojAuneAjD/view?usp=sharing"
+              target="_blank"
+            >
               <span className="college">
                 Resume <OpenInNewIcon />
               </span>

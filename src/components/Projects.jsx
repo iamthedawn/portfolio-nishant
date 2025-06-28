@@ -1,9 +1,8 @@
-import React from "react";
-import "./Projects.scss";
 import ProjectsCard from "./ProjectsCard";
-import "animate.css";
-import { projects } from "../config/config";
+import { projects } from "../utils/constants";
 import { Helmet } from "react-helmet-async";
+import "./Projects.scss";
+import "animate.css";
 
 const Projects = () => {
   return (

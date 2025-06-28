@@ -1,11 +1,11 @@
 import  { useRef } from "react";
-import "./Experience.scss";
 import jiologo from "./../../assets/jiologo.jpg";
 import internlogo from "./../../assets/internlogo.jpeg";
 import ExperienceCards from "./ExperienceCards";
 import * as motion from "motion/react-client";
-import "animate.css";
 import { Helmet } from "react-helmet-async";
+import "./Experience.scss";
+import "animate.css";
 
 const Experience = () => {
   const constraintsRef1 = useRef(null);

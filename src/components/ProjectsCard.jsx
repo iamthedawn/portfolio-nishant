@@ -1,7 +1,7 @@
-import React from "react";
-import "./Projects.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./Projects.scss";
+
 
 const ProjectsCard = ({
   projName,

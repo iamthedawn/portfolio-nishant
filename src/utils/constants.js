@@ -9,6 +9,85 @@ import DiceGame from "./../../assets/DiceGameProj.png";
 import FlowChartBuilder from "./../../assets/FlowChartProj.png";
 import ToDoList from "./../../assets/ToDoListProj.png";
 
+export const professionalSkillset = [
+  {
+    title: "C Programming",
+    iconClass: "devicon-c-plain",
+    link: "https://en.wikipedia.org/wiki/C_(programming_language)",
+  },
+  {
+    title: "C++ Programming",
+    iconClass: "devicon-cplusplus-plain",
+    link: "https://isocpp.org/",
+  },
+  {
+    title: "Java",
+    iconClass: "devicon-java-plain",
+    link: "https://www.java.com/",
+  },
+  {
+    title: "HTML",
+    iconClass: "devicon-html5-plain",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    title: "CSS",
+    iconClass: "devicon-css3-plain",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    title: "JavaScript",
+    iconClass: "devicon-javascript-plain",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    title: "ReactJS",
+    iconClass: "devicon-react-original",
+    link: "https://reactjs.org/",
+  },
+  {
+    title: "NextJS",
+    iconClass: "devicon-nextjs-plain",
+    link: "https://nextjs.org/",
+  },
+  {
+    title: "TailwindCSS",
+    iconClass: "devicon-tailwindcss-original",
+    link: "https://tailwindcss.com/",
+  },
+  {
+    title: "Redux",
+    iconClass: "devicon-redux-original",
+    link: "https://redux.js.org/",
+  },
+  {
+    title: "Git",
+    iconClass: "devicon-git-plain",
+    link: "https://git-scm.com/",
+  },
+];
+export const toolsIuse = [
+  {
+    title: "VS Code",
+    iconClass: "devicon-vscode-plain",
+    link: "https://code.visualstudio.com/",
+  },
+  {
+    title: "Postman",
+    iconClass: "devicon-postman-plain",
+    link: "https://www.postman.com/",
+  },
+  {
+    title: "IntelliJ IDEA",
+    iconClass: "devicon-intellij-plain",
+    link: "https://www.jetbrains.com/idea/",
+  },
+  {
+    title: "Vercel",
+    iconClass: "devicon-vercel-original",
+    link: "https://vercel.com/",
+  },
+];
 export const projects = [
   {
     projName: "FlowChart Builder",

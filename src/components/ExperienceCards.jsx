@@ -1,7 +1,6 @@
-import React from "react";
-import "./Experience.scss";
 import Tooltip from "@mui/material/Tooltip";
 import Zoom from "@mui/material/Zoom";
+import "./Experience.scss";
 
 const ExperienceCards = ({ company, role, duration, logo }) => {
   return (
