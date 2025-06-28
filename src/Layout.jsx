@@ -9,7 +9,6 @@ import Footer from "./components/Footer.jsx";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import "./Layout.scss";
-import { useEffect, useState } from "react";
 
 const Layout = () => {
   const location = useLocation();
