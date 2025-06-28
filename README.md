@@ -7,7 +7,9 @@ Welcome to the source code of **Nishant Mourya's personal portfolio website**, b
 
 - **Frontend Framework:** [React.js](https://reactjs.org/)
 - **Build Tool:** [Vite](https://vitejs.dev/) – blazing-fast bundler and dev server
-- **UI Framework:** [MUI (Material UI)](https://mui.com/) – for clean and consistent component styling, [Helmet react library (react-helmet-async )](https://www.npmjs.com/package/react-helmet-async) – for dynamic titles for diff routes
+- **UI Framework:** 
+  - [MUI (Material UI)](https://mui.com/) – for clean and consistent component styling, 
+  - [Helmet react library (react-helmet-async )](https://www.npmjs.com/package/react-helmet-async) – for dynamic titles for diff routes
 - **Logic:** JavaScript (ES6+)
 - **Animations:**
   - 🎞️ [Framer Motion](https://www.framer.com/motion/) – for smooth transitions and page animations
