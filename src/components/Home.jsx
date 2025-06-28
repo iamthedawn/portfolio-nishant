@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import * as motion from "motion/react-client";
 import nishantImg from "./../../assets/homeImg.jpg";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";

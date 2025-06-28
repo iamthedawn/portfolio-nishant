@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef, useState } from "react";
 import "./Connect.scss";
 import * as motion from "motion/react-client";
 import "animate.css";
@@ -8,15 +8,33 @@ import { Helmet } from "react-helmet-async";
 
 const Connect = () => {
   const formRef = useRef(null);
+  const [formFields, setFormFileds] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleSubmit = () => {
+    if (Object.entries(formFields).some(([_, value]) => value == "")) {
+      return null;
+    }
     return setTimeout(() => {
       alert("Submitted Successfully!");
       if (formRef.current) {
         formRef.current.reset();
       }
-    }, 1000);
+    }, 100);
   };
+
+  const handleInputChange = (field, value) => {
+    setFormFileds((prev) => {
+      return {
+        ...prev,
+        [field]: value,
+      };
+    });
+  };
+  
 
   return (
     <div className="connectContainer">
@@ -38,6 +56,9 @@ const Connect = () => {
                 variant="standard"
                 fullWidth
                 required={true}
+                onChange={(e) =>
+                  handleInputChange(e.target.name, e.target.value)
+                }
               />
               <TextField
                 id="email"
@@ -48,6 +69,9 @@ const Connect = () => {
                 fullWidth
                 required={true}
                 className="marginTop"
+                onChange={(e) =>
+                  handleInputChange(e.target.name, e.target.value)
+                }
               />
               <TextField
                 id="message"
@@ -59,6 +83,9 @@ const Connect = () => {
                 fullWidth
                 required={true}
                 className="marginTop"
+                onChange={(e) =>
+                  handleInputChange(e.target.name, e.target.value)
+                }
               />
               <Button
                 onClick={() => handleSubmit()}

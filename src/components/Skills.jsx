@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Skills.scss";
 import * as motion from "motion/react-client";
+import { Tooltip } from "@mui/material";
 
 import "animate.css";
 import { Helmet } from "react-helmet-async";
@@ -22,36 +23,63 @@ const Skills = () => {
           <div className="skillHeading">Professional Skillset</div>
           <div className=" skillsFlex ">
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i className="devicon-c-plain icon" />
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i class=" icon devicon-cplusplus-plain" />
-            </motion.div>
-
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i class=" icon devicon-java-plain-wordmark" />
+              <Tooltip title="C Programming" arrow followCursor>
+                <i className="devicon-c-plain icon" />
+              </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i class=" icon devicon-html5-plain-wordmark" />
+              <Tooltip title="C++ Programming" arrow followCursor>
+                <i className=" icon devicon-cplusplus-plain" />
+              </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i class=" icon devicon-css3-plain-wordmark" />
+              <Tooltip title="Java" arrow followCursor>
+                <i className=" icon devicon-java-plain-wordmark" />
+              </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i class=" icon devicon-javascript-plain" />
+              <Tooltip title="HTML" arrow followCursor>
+                <i className=" icon devicon-html5-plain-wordmark" />
+              </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i class=" icon devicon-react-original" />
+              <Tooltip title="CSS" arrow followCursor>
+                <i className=" icon devicon-css3-plain-wordmark" />
+              </Tooltip>
             </motion.div>
+
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i class=" icon devicon-redux-original" />
+              <Tooltip title="JavaScript" arrow followCursor>
+                <i className=" icon devicon-javascript-plain" />
+              </Tooltip>
             </motion.div>
+
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-              <i class=" icon devicon-git-plain" />
+              <Tooltip title="ReactJS" arrow followCursor>
+                <i className=" icon devicon-react-original" />
+              </Tooltip>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+              <Tooltip title="TailwindCSS" arrow followCursor>
+                <i className="icon devicon-tailwindcss-original"></i>
+              </Tooltip>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+              <Tooltip title="Redux" arrow followCursor>
+                <i className=" icon devicon-redux-original" />
+              </Tooltip>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+              <Tooltip title="Git" arrow followCursor>
+                <i className=" icon devicon-git-plain" />
+              </Tooltip>
             </motion.div>
           </div>
         </div>
@@ -60,18 +88,27 @@ const Skills = () => {
             <div className="skillHeading">Tools I use</div>
             <div className=" skillsFlex ">
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-                <i class="icon devicon-vscode-plain" />
+                <Tooltip title="VS Code" arrow followCursor>
+                  <i className="icon devicon-vscode-plain" />
+                </Tooltip>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-                <i class="icon devicon-postman-plain" />
+                <Tooltip title="Postman" arrow followCursor>
+                  <i className="icon devicon-postman-plain" />
+                </Tooltip>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-                <i class="icon devicon-intellij-plain" />
+                <Tooltip title="IntelliJ" arrow followCursor>
+                  <i className="icon devicon-intellij-plain" />
+                </Tooltip>
               </motion.div>
+
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-                <i class="icon devicon-vercel-original-wordmark" />
+                <Tooltip title="Vercel" arrow followCursor>
+                  <i className="icon devicon-vercel-original-wordmark" />
+                </Tooltip>
               </motion.div>
             </div>
           </div>

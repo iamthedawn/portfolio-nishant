@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./Header.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Header = () => {
-  const [mobileMenuClicked, setMobileMenuClicked] = useState(false);
+  const [mobileMenuClicked, setMobileMenuClicked] = useState(true);
 
   return (
     <div
@@ -37,12 +37,12 @@ const Header = () => {
           </li>
         )}
 
-        <li  className={`${
+        <li className={`${
             location.pathname.includes("experience") && "navElementsUnderline"
           }`}>
             <Link to="experience">Experience</Link>
         </li>
-        <li  className={`${
+        <li className={`${
             location.pathname.includes("skills") && "navElementsUnderline"
           }`}>
           <Link to="skills">Skills</Link>

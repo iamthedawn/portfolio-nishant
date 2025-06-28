@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import "./Experience.scss";
 import jiologo from "./../../assets/jiologo.jpg";
 import internlogo from "./../../assets/internlogo.jpeg";
