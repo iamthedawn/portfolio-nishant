@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
 const Header = () => {
-  const [mobileMenuClicked, setMobileMenuClicked] = useState(true);
+  const [mobileMenuClicked, setMobileMenuClicked] = useState(false);
 
   return (
     <div
