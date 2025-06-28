@@ -21,70 +21,136 @@ const Skills = () => {
       <div className="skillsList">
         <div className="skillsFlexContainer animate__animated animate__slideInRight">
           <div className="skillHeading">Professional Skillset</div>
-          <div className=" skillsFlex ">
+          <div className="skillsFlex">
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="C Programming" arrow followCursor>
-                <i className="devicon-c-plain icon" />
+                <a
+                  href="https://en.wikipedia.org/wiki/C_(programming_language)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="devicon-c-plain icon" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="C++ Programming" arrow followCursor>
-                <i className=" icon devicon-cplusplus-plain" />
+                <a
+                  href="https://isocpp.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-cplusplus-plain" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="Java" arrow followCursor>
-                <i className=" icon devicon-java-plain" />
+                <a
+                  href="https://www.java.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-java-plain" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="HTML" arrow followCursor>
-                <i className=" icon devicon-html5-plain" />
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-html5-plain" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="CSS" arrow followCursor>
-                <i className=" icon devicon-css3-plain" />
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-css3-plain" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="JavaScript" arrow followCursor>
-                <i className=" icon devicon-javascript-plain" />
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-javascript-plain" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="ReactJS" arrow followCursor>
-                <i className=" icon devicon-react-original" />
+                <a
+                  href="https://reactjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-react-original" />
+                </a>
               </Tooltip>
             </motion.div>
 
-             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="NextJS" arrow followCursor>
-                <i className="icon devicon-nextjs-plain" />
+                <a
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-nextjs-plain" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="TailwindCSS" arrow followCursor>
-                <i className="icon devicon-tailwindcss-original"></i>
+                <a
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-tailwindcss-original" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="Redux" arrow followCursor>
-                <i className=" icon devicon-redux-original" />
+                <a
+                  href="https://redux.js.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-redux-original" />
+                </a>
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="Git" arrow followCursor>
-                <i className=" icon devicon-git-plain" />
+                <a
+                  href="https://git-scm.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon devicon-git-plain" />
+                </a>
               </Tooltip>
             </motion.div>
           </div>
@@ -92,28 +158,52 @@ const Skills = () => {
         {disp && (
           <div className="skillsFlexContainer animate__animated animate__slideInRight ">
             <div className="skillHeading">Tools I use</div>
-            <div className=" skillsFlex ">
+            <div className="skillsFlex">
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
                 <Tooltip title="VS Code" arrow followCursor>
-                  <i className="icon devicon-vscode-plain" />
+                  <a
+                    href="https://code.visualstudio.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon devicon-vscode-plain" />
+                  </a>
                 </Tooltip>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
                 <Tooltip title="Postman" arrow followCursor>
-                  <i className="icon devicon-postman-plain" />
+                  <a
+                    href="https://www.postman.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon devicon-postman-plain" />
+                  </a>
                 </Tooltip>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
-                <Tooltip title="IntelliJ" arrow followCursor>
-                  <i className="icon devicon-intellij-plain" />
+                <Tooltip title="IntelliJ IDEA" arrow followCursor>
+                  <a
+                    href="https://www.jetbrains.com/idea/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon devicon-intellij-plain" />
+                  </a>
                 </Tooltip>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
                 <Tooltip title="Vercel" arrow followCursor>
-                  <i className="icon devicon-vercel-original" />
+                  <a
+                    href="https://vercel.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon devicon-vercel-original" />
+                  </a>
                 </Tooltip>
               </motion.div>
             </div>
