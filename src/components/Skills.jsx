@@ -36,19 +36,19 @@ const Skills = () => {
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="Java" arrow followCursor>
-                <i className=" icon devicon-java-plain-wordmark" />
+                <i className=" icon devicon-java-plain" />
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="HTML" arrow followCursor>
-                <i className=" icon devicon-html5-plain-wordmark" />
+                <i className=" icon devicon-html5-plain" />
               </Tooltip>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="CSS" arrow followCursor>
-                <i className=" icon devicon-css3-plain-wordmark" />
+                <i className=" icon devicon-css3-plain" />
               </Tooltip>
             </motion.div>
 
@@ -61,6 +61,12 @@ const Skills = () => {
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
               <Tooltip title="ReactJS" arrow followCursor>
                 <i className=" icon devicon-react-original" />
+              </Tooltip>
+            </motion.div>
+
+             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
+              <Tooltip title="NextJS" arrow followCursor>
+                <i className="icon devicon-nextjs-plain" />
               </Tooltip>
             </motion.div>
 
@@ -107,7 +113,7 @@ const Skills = () => {
 
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.6 }}>
                 <Tooltip title="Vercel" arrow followCursor>
-                  <i className="icon devicon-vercel-original-wordmark" />
+                  <i className="icon devicon-vercel-original" />
                 </Tooltip>
               </motion.div>
             </div>
