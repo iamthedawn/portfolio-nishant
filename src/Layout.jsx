@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import VantaBackground from "./components/VantaBackground";
-import useScreenHeight from "./hooks/useScreenHeight.js";
+// import useScreenHeight from "./hooks/useScreenHeight.js";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects.jsx";
 import Connect from "./components/Connect.jsx";
@@ -12,7 +12,14 @@ import "./Layout.scss";
 
 const Layout = () => {
   const location = useLocation();
-  const { height } = useScreenHeight();
+  const [height, setHeight] = useState(window.innerHeight);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setHeight(window.innerHeight);
+    });
+  }, [window.innerHeight]);
+
+  // const { height } = useScreenHeight();
 
   return (
     <div className="container" style={{ height: height, width: "100vw" }}>
