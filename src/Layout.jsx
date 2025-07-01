@@ -6,9 +6,12 @@ import Projects from "./components/Projects.jsx";
 import Connect from "./components/Connect.jsx";
 import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
+
 import "./Layout.scss";
+
 
 const Layout = () => {
   const location = useLocation();
