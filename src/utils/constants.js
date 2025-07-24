@@ -12,7 +12,7 @@ import ToDoList from "./../../assets/ToDoListProj.png";
 export const professionalSkillset = [
   {
     title: "C Programming",
-    iconClass: "devicon-c-plain",
+    iconClass: "devicon-c-original",
     link: "https://en.wikipedia.org/wiki/C_(programming_language)",
   },
   {
