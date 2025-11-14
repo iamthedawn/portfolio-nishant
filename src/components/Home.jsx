@@ -1,5 +1,5 @@
 import * as motion from "motion/react-client";
-import nishantImg from "./../../assets/homeImg.jpg";
+import nishantImg from "./../../assets/homeImg1.jpg";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import useTyped from "../hooks/useTyped";
 import { Helmet } from "react-helmet-async";
