@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+import mobBg from "../../public/mobBg.jpg";
 const VantaBackground = () => {
   const vantaRef = useRef(null);
 
@@ -25,18 +25,32 @@ const VantaBackground = () => {
   }, []);
 
   return (
-    <div
-      id="vantaBg"
-      ref={vantaRef}
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100vh",
-        zIndex: 1,
-      }}
-    />
+    <>
+      <div
+        id="vantaBg"
+        ref={vantaRef}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          zIndex: 1,
+        }}
+      />
+      <img
+        id="mobBg"
+        src={mobBg}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          zIndex: 1,
+        }}
+      />
+    </>
   );
 };
 

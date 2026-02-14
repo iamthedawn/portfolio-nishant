@@ -9,3 +9,15 @@ body{
   height: auto;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  #vantaBg {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  #mobBg{
+    visibility: hidden;
+  }
+}
