@@ -41,6 +41,11 @@ export const professionalSkillset = [
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
+    title: "TypeScript",
+    iconClass: "devicon-typescript-plain",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
     title: "ReactJS",
     iconClass: "devicon-react-original",
     link: "https://reactjs.org/",
