@@ -28,7 +28,7 @@ const Home = () => {
             apps. Always curious, always coding.
             <br />
             <a
-              href="https://drive.google.com/file/d/1TUIsMjLGKw8dU-m4LHRtb-L23pUn3i3h/view"
+              href="https://drive.google.com/file/d/1sxl62oT1uC5sl99SDlWUDagukKD0okCn/view"
               target="_blank"
             >
               <span className="college">
