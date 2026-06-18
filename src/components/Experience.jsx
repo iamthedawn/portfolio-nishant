@@ -36,7 +36,7 @@ const Experience = () => {
               <ExperienceCards
                 company={"Scapia Cards"}
                 role={"Software Development Engineer"}
-                duration={"May 2026 - Present"}
+                duration={"June 2026 - Present"}
                 logo={scapialogo}
               />
             </motion.div>
